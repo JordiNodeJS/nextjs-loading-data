@@ -1,3 +1,4 @@
+@import url(pico.css);
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
   display: flex;
@@ -12,3 +13,4 @@ header, footer {
   font-size: large;
   margin: 1rem 0;
 }
+

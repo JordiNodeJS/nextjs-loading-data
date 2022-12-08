@@ -1,6 +1,8 @@
+import EditableComments from "./EditableComments"
+
 const commentsFetch = () =>
   new Promise<string[]>(resolve =>
-    setTimeout(() => resolve(['Comment 1', 'Comment 2', 'Comment 3']), 1000)
+    setTimeout(() => resolve(['Comment 1', 'Comment 2', 'Comment 3']), 5000)
   )
 
 async function Comments() {
@@ -8,9 +10,7 @@ async function Comments() {
 
   return (
     <div>
-      {comments.map(comment => (
-        <li key={comment}>{comment}</li>
-      ))}
+      <EditableComments comments={comments} />
     </div>
   )
 }
